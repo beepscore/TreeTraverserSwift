@@ -80,12 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				DE047F251ECE12A700C13158 /* AppDelegate.swift */,
-				DE047F271ECE12A700C13158 /* ViewController.swift */,
-				DE047F291ECE12A700C13158 /* Main.storyboard */,
 				DE047F2C1ECE12A700C13158 /* Assets.xcassets */,
-				DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */,
 				DE047F311ECE12A700C13158 /* Info.plist */,
+				DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */,
+				DE047F291ECE12A700C13158 /* Main.storyboard */,
 				DE382E831ECE13D000106F24 /* TreeTraverser.swift */,
+				DE047F271ECE12A700C13158 /* ViewController.swift */,
 			);
 			path = TreeTraverserSwift;
 			sourceTree = "<group>";
@@ -93,8 +93,8 @@
 		DE047F391ECE12A800C13158 /* TreeTraverserSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
 				DE047F3C1ECE12A800C13158 /* Info.plist */,
+				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
 			);
 			path = TreeTraverserSwiftTests;
 			sourceTree = "<group>";
