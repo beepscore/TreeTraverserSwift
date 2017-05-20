@@ -15,15 +15,6 @@ class TreeTraverser: NSObject {
         return int % 2 == 0
     }
 
-//    /// - Returns: level in binary tree
-//    /// returns 0 for root node
-//    class func level(nodeCount: Int) -> Int {
-//        if nodeCount <= 1 {
-//            return 0
-//        }
-//        return Int(log2(Float(nodeCount)))
-//    }
-
     /// Traverses binary tree breadth first, alternate direction each level
     /// https://en.wikipedia.org/wiki/Breadth-first_search
     /// - Parameter root: tree root Node
