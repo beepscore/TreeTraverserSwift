@@ -10,7 +10,7 @@ import Foundation
 
 /// Hashable so it can be used in a set
 /// http://stackoverflow.com/questions/41972319/make-struct-hashable
-class Node: Hashable {
+public class Node: Hashable {
     var value: Int
     var left: Node?
     var right: Node?
@@ -22,7 +22,7 @@ class Node: Hashable {
     }
 
     // hashValue does not have to be unique
-    var hashValue: Int {
+    public var hashValue: Int {
         return value
     }
 
@@ -33,7 +33,7 @@ class Node: Hashable {
 ///   - lhs: a Node
 ///   - rhs: a Node
 /// - Returns: true if all properties are equal
-func == (lhs: Node, rhs: Node) -> Bool {
+public func == (lhs: Node, rhs: Node) -> Bool {
     let valueEqual = lhs.value == rhs.value
     let leftEqual = lhs.left == rhs.left
     let rightEqual = lhs.right == rhs.right
