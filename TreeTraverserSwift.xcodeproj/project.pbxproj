@@ -14,6 +14,8 @@
 		DE047F301ECE12A700C13158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */; };
 		DE047F3B1ECE12A800C13158 /* TreeTraverserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */; };
 		DE382E841ECE13D000106F24 /* TreeTraverser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E831ECE13D000106F24 /* TreeTraverser.swift */; };
+		DE765AF41ECFEB6C007F3550 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF31ECFEB6C007F3550 /* Node.swift */; };
+		DE765AF61ECFF181007F3550 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF51ECFF181007F3550 /* NodeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraverserTests.swift; sourceTree = "<group>"; };
 		DE047F3C1ECE12A800C13158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE382E831ECE13D000106F24 /* TreeTraverser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTraverser.swift; sourceTree = "<group>"; };
+		DE765AF31ECFEB6C007F3550 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		DE765AF51ECFF181007F3550 /* NodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				DE047F311ECE12A700C13158 /* Info.plist */,
 				DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */,
 				DE047F291ECE12A700C13158 /* Main.storyboard */,
+				DE765AF31ECFEB6C007F3550 /* Node.swift */,
 				DE382E831ECE13D000106F24 /* TreeTraverser.swift */,
 				DE047F271ECE12A700C13158 /* ViewController.swift */,
 			);
@@ -95,6 +100,7 @@
 			children = (
 				DE047F3C1ECE12A800C13158 /* Info.plist */,
 				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
+				DE765AF51ECFF181007F3550 /* NodeTests.swift */,
 			);
 			path = TreeTraverserSwiftTests;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 				DE047F281ECE12A700C13158 /* ViewController.swift in Sources */,
 				DE047F261ECE12A700C13158 /* AppDelegate.swift in Sources */,
 				DE382E841ECE13D000106F24 /* TreeTraverser.swift in Sources */,
+				DE765AF41ECFEB6C007F3550 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE047F3B1ECE12A800C13158 /* TreeTraverserTests.swift in Sources */,
+				DE765AF61ECFF181007F3550 /* NodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
