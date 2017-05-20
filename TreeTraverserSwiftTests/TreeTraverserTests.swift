@@ -10,7 +10,19 @@ import XCTest
 @testable import TreeTraverserSwift
 
 class TreeTraverserTests: XCTestCase {
-    
+
+    func testLevel() {
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 0), 0)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 1), 0)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 2), 1)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 3), 1)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 4), 2)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 5), 2)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 6), 2)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 7), 2)
+        XCTAssertEqual(TreeTraverser.level(nodeCount: 8), 3)
+    }
+
     func testNodesByTraversingZigZagOneNode() {
         let node = Node(value: 0, left: nil, right: nil)
         XCTAssertEqual(TreeTraverser.nodesByTraversingZigZag(root: node), [node])

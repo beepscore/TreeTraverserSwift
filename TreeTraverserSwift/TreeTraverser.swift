@@ -15,6 +15,15 @@ class TreeTraverser: NSObject {
         return int % 2 == 0
     }
 
+    /// - Returns: level in binary tree
+    /// returns 0 for root node
+    class func level(nodeCount: Int) -> Int {
+        if nodeCount <= 1 {
+            return 0
+        }
+        return Int(log2(Float(nodeCount)))
+    }
+
     /// Traverses binary tree breadth first, alternate direction each level
     /// https://en.wikipedia.org/wiki/Breadth-first_search
     /// - Parameter root: tree root Node
@@ -28,6 +37,8 @@ class TreeTraverser: NSObject {
         var queue = Queue()
         queue.enqueue(root)
 
+        // node positions, including nil children
+        var nodeCount = 1
         var level = 0
 
         var currentNode = root
@@ -37,10 +48,10 @@ class TreeTraverser: NSObject {
             currentNode = queue.dequeue() as! Node
             nodes.append(currentNode)
 
-            // FIXME: store level in queue??
-            // or allow queue to enqueue null?
-            // calculate based on count and number of nil children??
-            level += 1
+            // FIXME:
+            // increment nodeCount, even if one or more nodes are nil
+            nodeCount += 2
+            level = TreeTraverser.level(nodeCount: nodeCount)
 
             if TreeTraverser.isEven(int: level) {
                 // traverse left to right
