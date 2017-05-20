@@ -10,7 +10,15 @@ import UIKit
 
 class TreeTraverser: NSObject {
 
-    class func addTwo(int: Int) -> Int {
-        return int + 2
+    /// Traverses binary tree breadth first, alternate direction each level
+    ///
+    /// - Parameter root: tree root Node
+    /// - Returns: array of nodes in traversal order
+    class func nodesByTraversingZigZag(root: Node) -> [Node] {
+
+        // TODO: implement method
+        // build a fifo queue, reverse order each level
+
+        return [root]
     }
 }

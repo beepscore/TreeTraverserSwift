@@ -11,8 +11,9 @@ import XCTest
 
 class TreeTraverserTests: XCTestCase {
     
-    func testAddTwo() {
-        XCTAssertEqual(TreeTraverser.addTwo(int: 3), 5)
+    func testNodesByTraversingZigZagOneNode() {
+        let node = Node(value: 0, left: nil, right: nil)
+        XCTAssertEqual(TreeTraverser.nodesByTraversingZigZag(root: node), [node])
     }
 
 }
