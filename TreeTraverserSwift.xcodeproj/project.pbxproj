@@ -42,6 +42,7 @@
 		DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraverserTests.swift; sourceTree = "<group>"; };
 		DE047F3C1ECE12A800C13158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE382E831ECE13D000106F24 /* TreeTraverser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTraverser.swift; sourceTree = "<group>"; };
+		DE55ECBF1ED0D3BA006DAFA7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE765AF31ECFEB6C007F3550 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		DE765AF51ECFF181007F3550 /* NodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		DE765AF71ED00121007F3550 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		DE047F191ECE12A700C13158 = {
 			isa = PBXGroup;
 			children = (
+				DE55ECBF1ED0D3BA006DAFA7 /* README.md */,
 				DE047F241ECE12A700C13158 /* TreeTraverserSwift */,
 				DE047F391ECE12A800C13158 /* TreeTraverserSwiftTests */,
 				DE047F231ECE12A700C13158 /* Products */,
