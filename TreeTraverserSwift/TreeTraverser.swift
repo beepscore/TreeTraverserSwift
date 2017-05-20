@@ -39,7 +39,6 @@ class TreeTraverser: NSObject {
 
         while !queue.isEmpty {
 
-
             for parentNode in previousLevelNodesReversed {
 
                 // decrease queue
