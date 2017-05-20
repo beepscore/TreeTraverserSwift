@@ -79,8 +79,8 @@ class QueueTests: XCTestCase {
         XCTAssertEqual(dequeued, node1)
         XCTAssertEqual(queue.count, 0)
 
-        let dequedFromEmptyQueue = queue.dequeue()
-        XCTAssertNil(dequedFromEmptyQueue)
+        let dequeuedFromEmptyQueue = queue.dequeue()
+        XCTAssertNil(dequeuedFromEmptyQueue)
     }
 
 }
