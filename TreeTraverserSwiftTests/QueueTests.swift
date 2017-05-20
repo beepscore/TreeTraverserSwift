@@ -21,4 +21,19 @@ class QueueTests: XCTestCase {
         XCTAssertEqual(queue.count, 0)
     }
 
+    func testEnqueue() {
+        var queue = Queue()
+        let node = Node(value: 2, left: nil, right: nil)
+        queue.enqueue(node)
+        XCTAssertEqual(queue.count, 1)
+    }
+
+    func testPeek() {
+        var queue = Queue()
+        XCTAssertNil(queue.peek())
+        let node = Node(value: 2, left: nil, right: nil)
+        queue.enqueue(node)
+        XCTAssertEqual(queue.peek() as! Node, node)
+    }
+
 }
