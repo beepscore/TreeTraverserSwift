@@ -34,7 +34,6 @@ class TreeTraverser: NSObject {
         var queue = Queue()
         queue.enqueue(root)
 
-        var currentNode = root
         // level of currentNode in tree
         var level = 1
 
@@ -44,7 +43,7 @@ class TreeTraverser: NSObject {
             for parentNode in previousLevelNodesReversed {
 
                 // decrease queue
-                currentNode = queue.dequeue() as! Node
+                var _ = queue.dequeue() as! Node
 
                 // visit children
 
