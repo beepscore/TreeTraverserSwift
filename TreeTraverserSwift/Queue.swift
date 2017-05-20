@@ -14,7 +14,7 @@ public struct Queue {
 
     /// array backs the queue
     /// Ray Wenderlich tutorial uses custom LinkedList instead
-    fileprivate var list = Array<Any>()
+    public var list = Array<Any>()
 
     /// isEmpty is more efficient than checking count == 0
     /// - Returns: true if queue is empty
