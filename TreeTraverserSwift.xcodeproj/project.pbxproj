@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				DE047F3C1ECE12A800C13158 /* Info.plist */,
-				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
 				DE765AF51ECFF181007F3550 /* NodeTests.swift */,
+				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
 			);
 			path = TreeTraverserSwiftTests;
 			sourceTree = "<group>";
