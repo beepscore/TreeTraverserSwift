@@ -10,7 +10,7 @@ import Foundation
 
 /// Hashable so it can be used in a set
 /// http://stackoverflow.com/questions/41972319/make-struct-hashable
-public class Node: Hashable {
+public class Node: NSObject {
     var value: Int
     var left: Node?
     var right: Node?
@@ -22,8 +22,14 @@ public class Node: Hashable {
     }
 
     // hashValue does not have to be unique
-    public var hashValue: Int {
+    override public var hashValue: Int {
         return value
+    }
+
+    /// computed property
+    // http://stackoverflow.com/questions/30967182/overriding-description-method-in-nsobject-on-swift
+    override public var description: String {
+        return String(value)
     }
 
 }
