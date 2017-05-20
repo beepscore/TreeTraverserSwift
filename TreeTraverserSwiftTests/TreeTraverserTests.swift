@@ -16,4 +16,14 @@ class TreeTraverserTests: XCTestCase {
         XCTAssertEqual(TreeTraverser.nodesByTraversingZigZag(root: node), [node])
     }
 
+    func testNodesByTraversingZigZagThreeNodes() {
+        let node1 = Node(value: 2, left: nil, right: nil)
+        let node2 = Node(value: 8, left: nil, right: nil)
+        let node0 = Node(value: 0, left: node1, right: node2)
+
+        XCTAssertEqual(TreeTraverser.nodesByTraversingZigZag(root: node0),
+                       [node0, node2, node1])
+    }
+
+
 }
