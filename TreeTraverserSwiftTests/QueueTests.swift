@@ -55,4 +55,32 @@ class QueueTests: XCTestCase {
         XCTAssertTrue(queue.isEmpty)
         XCTAssertEqual(queue.count, 0)
     }
+
+    func testDequeueTwo() {
+        var queue = Queue()
+        XCTAssertNil(queue.peek())
+        let node0 = Node(value: 2, left: nil, right: nil)
+        let node1 = Node(value: 8, left: nil, right: nil)
+        queue.enqueue(node0)
+        queue.enqueue(node1)
+        XCTAssertEqual(queue.count, 2)
+
+        // call method under test
+        let first = queue.dequeue() as! Node
+        XCTAssertEqual(queue.count, 1)
+
+        XCTAssertEqual(first, node0)
+
+        let next = queue.peek() as! Node
+        XCTAssertEqual(queue.count, 1)
+        XCTAssertEqual(next, node1)
+
+        let dequeued = queue.dequeue() as! Node
+        XCTAssertEqual(dequeued, node1)
+        XCTAssertEqual(queue.count, 0)
+
+        let dequedFromEmptyQueue = queue.dequeue()
+        XCTAssertNil(dequedFromEmptyQueue)
+    }
+
 }
