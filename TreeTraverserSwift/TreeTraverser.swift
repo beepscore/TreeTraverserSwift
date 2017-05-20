@@ -15,14 +15,14 @@ class TreeTraverser: NSObject {
         return int % 2 == 0
     }
 
-    /// - Returns: level in binary tree
-    /// returns 0 for root node
-    class func level(nodeCount: Int) -> Int {
-        if nodeCount <= 1 {
-            return 0
-        }
-        return Int(log2(Float(nodeCount)))
-    }
+//    /// - Returns: level in binary tree
+//    /// returns 0 for root node
+//    class func level(nodeCount: Int) -> Int {
+//        if nodeCount <= 1 {
+//            return 0
+//        }
+//        return Int(log2(Float(nodeCount)))
+//    }
 
     /// Traverses binary tree breadth first, alternate direction each level
     /// https://en.wikipedia.org/wiki/Breadth-first_search
@@ -31,49 +31,67 @@ class TreeTraverser: NSObject {
     class func nodesByTraversingZigZag(root: Node) -> [Node] {
 
         // nodes to return
-        var nodes = [Node]()
+        var nodes = [root]
+
+        // nodes from level in the order they were traversed
+        var levelNodesInOrderTraversed = [Node]()
+
+        // nodes from previous level in reverse order they were traversed
+        var previousLevelNodesReversed = [root]
 
         // queue of Nodes to visit
         var queue = Queue()
         queue.enqueue(root)
 
-        // node positions, including nil children
-        var nodeCount = 1
-        var level = 0
-
         var currentNode = root
+        // level of currentNode in tree
+        var level = 1
 
         while !queue.isEmpty {
 
-            currentNode = queue.dequeue() as! Node
-            nodes.append(currentNode)
 
-            // FIXME:
-            // increment nodeCount, even if one or more nodes are nil
-            nodeCount += 2
-            level = TreeTraverser.level(nodeCount: nodeCount)
+            for parentNode in previousLevelNodesReversed {
 
-            if TreeTraverser.isEven(int: level) {
-                // traverse left to right
-                if let left = currentNode.left {
-                    queue.enqueue(left)
-                }
-                if let right = currentNode.right {
-                    queue.enqueue(right)
-                }
+                // decrease queue
+                currentNode = queue.dequeue() as! Node
 
-            } else {
-                // level is odd
-                // traverse right to left
-                if let right = currentNode.right {
-                    queue.enqueue(right)
-                }
-                if let left = currentNode.left {
-                    queue.enqueue(left)
+                // visit children
+
+                if TreeTraverser.isEven(int: level) {
+
+                    // traverse left to right
+                    if let left = parentNode.left {
+                        levelNodesInOrderTraversed.append(left)
+                    }
+                    if let right = parentNode.right {
+                        levelNodesInOrderTraversed.append(right)
+                    }
+
+                } else {
+                    // level is odd
+                    // traverse right to left
+                    if let right = parentNode.right {
+                        levelNodesInOrderTraversed.append(right)
+                    }
+                    if let left = parentNode.left {
+                        levelNodesInOrderTraversed.append(left)
+                    }
                 }
             }
 
+            // save level
+            nodes += levelNodesInOrderTraversed
+            let levelNodesReversed: [Node] = levelNodesInOrderTraversed.reversed()
+            // append to queue directly without using enqueue()
+            queue.list = queue.list + levelNodesReversed
+
+            // prepare for next level
+            level += 1
+            previousLevelNodesReversed = levelNodesReversed
+            levelNodesInOrderTraversed = []
         }
         return nodes
     }
+
 }
+
