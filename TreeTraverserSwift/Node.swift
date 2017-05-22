@@ -21,7 +21,7 @@ public class Node: NSObject {
         self.right = right
     }
 
-    /// override isEqual enables comparing nodes via XCTAssertEqual and via ==
+    /// override isEqual enables comparing nodes via isEqual, XCTAssertEqual and ==
     /// so it is more general than simply defining func '==' for 2 Node
     override public func isEqual(_ x: Any?) -> Bool {
         guard let x = x as? Node else {
