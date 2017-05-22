@@ -21,9 +21,16 @@ public class Node: NSObject {
         self.right = right
     }
 
-    // hashValue does not have to be unique
-    override public var hashValue: Int {
-        return value
+    /// override isEqual enables comparing nodes via XCTAssertEqual and via ==
+    /// so it is more general than simply defining func '==' for 2 Node
+    override public func isEqual(_ x: Any?) -> Bool {
+        guard let x = x as? Node else {
+            return false
+        }
+        let valueEqual = value == x.value
+        let leftEqual = left == x.left
+        let rightEqual = right == x.right
+        return valueEqual && leftEqual && rightEqual
     }
 
     /// computed property
@@ -31,17 +38,6 @@ public class Node: NSObject {
     override public var description: String {
         return String(value)
     }
-
+    
 }
 
-/// implement Equatable, outside of class Node
-/// - Parameters:
-///   - lhs: a Node
-///   - rhs: a Node
-/// - Returns: true if all properties are equal
-public func == (lhs: Node, rhs: Node) -> Bool {
-    let valueEqual = lhs.value == rhs.value
-    let leftEqual = lhs.left == rhs.left
-    let rightEqual = lhs.right == rhs.right
-    return valueEqual && leftEqual && rightEqual
-}

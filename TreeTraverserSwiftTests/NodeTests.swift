@@ -31,7 +31,7 @@ class NodeTests: XCTestCase {
         let node0 = Node(value: 2, left: nil, right: nil)
         let node1 = Node(value: 10, left: node0, right: nil)
         let node2 = Node(value: 10, left: node0, right: nil)
-        // when comparing nodes, need to use == operator, not XCTAssertEqual
+        XCTAssertEqual(node1, node2)
         XCTAssertTrue(node1 == node2)
     }
 
@@ -40,6 +40,7 @@ class NodeTests: XCTestCase {
         let node1 = Node(value: 8, left: nil, right: nil)
         let node2 = Node(value: 10, left: node0, right: node1)
         let node3 = Node(value: 10, left: node0, right: nil)
+        XCTAssertNotEqual(node2, node3)
         XCTAssertFalse(node2 == node3)
     }
 
@@ -48,6 +49,7 @@ class NodeTests: XCTestCase {
         let node1 = Node(value: 8, left: nil, right: nil)
         let node2 = Node(value: 10, left: node0, right: node1)
         let node3 = Node(value: 12, left: node0, right: node1)
+        XCTAssertNotEqual(node2, node3)
         XCTAssertFalse(node2 == node3)
     }
 }
