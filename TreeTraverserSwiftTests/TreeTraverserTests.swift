@@ -21,15 +21,30 @@ class TreeTraverserTests: XCTestCase {
     }
 
     func testNodesByTraversingZigZagThreeNodes() {
+        //              0
+        //            /  \
+        //           /    \
+        //          /      \
+        //         2        8
+        //
         let node2 = Node(value: 8, left: nil, right: nil)
         let node1 = Node(value: 2, left: nil, right: nil)
         let node0 = Node(value: 0, left: node1, right: node2)
 
-        XCTAssertEqual(TreeTraverser.nodesByTraversingZigZag(root: node0),
-                       [node0, node2, node1])
+        let actual = TreeTraverser.nodesByTraversingZigZag(root: node0)
+        XCTAssertEqual(actual, [node0, node2, node1])
+        XCTAssertEqual(nodeValues(actual), [0, 8, 2])
     }
 
     func testNodesByTraversingZigZagSevenNodes() {
+        //              0
+        //            /  \
+        //           /    \
+        //          /      \
+        //         2        8
+        //        / \      / \
+        //       7  -3   12   20
+        //
         let node6 = Node(value: 20, left: nil, right: nil)
         let node5 = Node(value: 12, left: nil, right: nil)
         let node4 = Node(value: -3, left: nil, right: nil)
@@ -87,6 +102,5 @@ class TreeTraverserTests: XCTestCase {
         XCTAssertEqual(nodeValues(actual), [5, 7, 4, 2, 9, 6, 11, 8])
         XCTAssertEqual(actual.description, "[5, 7, 4, 2, 9, 6, 11, 8]")
     }
-    
 
 }
