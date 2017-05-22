@@ -7,60 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE047F261ECE12A700C13158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE047F251ECE12A700C13158 /* AppDelegate.swift */; };
-		DE047F281ECE12A700C13158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE047F271ECE12A700C13158 /* ViewController.swift */; };
-		DE047F2B1ECE12A700C13158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE047F291ECE12A700C13158 /* Main.storyboard */; };
-		DE047F2D1ECE12A700C13158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE047F2C1ECE12A700C13158 /* Assets.xcassets */; };
-		DE047F301ECE12A700C13158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */; };
-		DE047F3B1ECE12A800C13158 /* TreeTraverserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */; };
-		DE382E841ECE13D000106F24 /* TreeTraverser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E831ECE13D000106F24 /* TreeTraverser.swift */; };
-		DE765AF41ECFEB6C007F3550 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF31ECFEB6C007F3550 /* Node.swift */; };
-		DE765AF61ECFF181007F3550 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF51ECFF181007F3550 /* NodeTests.swift */; };
-		DE765AF81ED00121007F3550 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF71ED00121007F3550 /* Queue.swift */; };
-		DE765AFA1ED00B44007F3550 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE765AF91ED00B44007F3550 /* QueueTests.swift */; };
+		DEE0A0341ED33E70002F7450 /* TreeTraverser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE0A02B1ED33E70002F7450 /* TreeTraverser.framework */; };
+		DEE0A0391ED33E71002F7450 /* TreeTraverserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A0381ED33E71002F7450 /* TreeTraverserTests.swift */; };
+		DEE0A03B1ED33E71002F7450 /* TreeTraverser.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE0A02D1ED33E70002F7450 /* TreeTraverser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE0A0431ED33ED0002F7450 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A0421ED33ED0002F7450 /* NodeTests.swift */; };
+		DEE0A0451ED33EDA002F7450 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A0441ED33EDA002F7450 /* QueueTests.swift */; };
+		DEE0A0471ED33EE9002F7450 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A0461ED33EE9002F7450 /* Node.swift */; };
+		DEE0A0491ED33EF0002F7450 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A0481ED33EF0002F7450 /* Queue.swift */; };
+		DEE0A04B1ED33EFB002F7450 /* TreeTraverser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0A04A1ED33EFB002F7450 /* TreeTraverser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE047F371ECE12A800C13158 /* PBXContainerItemProxy */ = {
+		DEE0A0351ED33E70002F7450 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE047F1A1ECE12A700C13158 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE047F211ECE12A700C13158;
-			remoteInfo = TreeTraverserSwift;
+			remoteGlobalIDString = DEE0A02A1ED33E70002F7450;
+			remoteInfo = TreeTraverser;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE047F221ECE12A700C13158 /* TreeTraverserSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeTraverserSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE047F251ECE12A700C13158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE047F271ECE12A700C13158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE047F2A1ECE12A700C13158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE047F2C1ECE12A700C13158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE047F2F1ECE12A700C13158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DE047F311ECE12A700C13158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE047F361ECE12A800C13158 /* TreeTraverserSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeTraverserSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraverserTests.swift; sourceTree = "<group>"; };
-		DE047F3C1ECE12A800C13158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE382E831ECE13D000106F24 /* TreeTraverser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTraverser.swift; sourceTree = "<group>"; };
 		DE55ECBF1ED0D3BA006DAFA7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE765AF31ECFEB6C007F3550 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		DE765AF51ECFF181007F3550 /* NodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
-		DE765AF71ED00121007F3550 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		DE765AF91ED00B44007F3550 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		DEE0A02B1ED33E70002F7450 /* TreeTraverser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TreeTraverser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE0A02D1ED33E70002F7450 /* TreeTraverser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeTraverser.h; sourceTree = "<group>"; };
+		DEE0A02E1ED33E70002F7450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE0A0331ED33E70002F7450 /* TreeTraverserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeTraverserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE0A0381ED33E71002F7450 /* TreeTraverserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraverserTests.swift; sourceTree = "<group>"; };
+		DEE0A03A1ED33E71002F7450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE0A0421ED33ED0002F7450 /* NodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
+		DEE0A0441ED33EDA002F7450 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		DEE0A0461ED33EE9002F7450 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		DEE0A0481ED33EF0002F7450 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		DEE0A04A1ED33EFB002F7450 /* TreeTraverser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTraverser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE047F1F1ECE12A700C13158 /* Frameworks */ = {
+		DEE0A0271ED33E70002F7450 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE047F331ECE12A800C13158 /* Frameworks */ = {
+		DEE0A0301ED33E70002F7450 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE0A0341ED33E70002F7450 /* TreeTraverser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				DE55ECBF1ED0D3BA006DAFA7 /* README.md */,
-				DE047F241ECE12A700C13158 /* TreeTraverserSwift */,
-				DE047F391ECE12A800C13158 /* TreeTraverserSwiftTests */,
+				DEE0A02C1ED33E70002F7450 /* TreeTraverser */,
+				DEE0A0371ED33E70002F7450 /* TreeTraverserTests */,
 				DE047F231ECE12A700C13158 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,75 +74,83 @@
 		DE047F231ECE12A700C13158 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE047F221ECE12A700C13158 /* TreeTraverserSwift.app */,
-				DE047F361ECE12A800C13158 /* TreeTraverserSwiftTests.xctest */,
+				DEE0A02B1ED33E70002F7450 /* TreeTraverser.framework */,
+				DEE0A0331ED33E70002F7450 /* TreeTraverserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE047F241ECE12A700C13158 /* TreeTraverserSwift */ = {
+		DEE0A02C1ED33E70002F7450 /* TreeTraverser */ = {
 			isa = PBXGroup;
 			children = (
-				DE047F251ECE12A700C13158 /* AppDelegate.swift */,
-				DE047F2C1ECE12A700C13158 /* Assets.xcassets */,
-				DE047F311ECE12A700C13158 /* Info.plist */,
-				DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */,
-				DE047F291ECE12A700C13158 /* Main.storyboard */,
-				DE765AF31ECFEB6C007F3550 /* Node.swift */,
-				DE765AF71ED00121007F3550 /* Queue.swift */,
-				DE382E831ECE13D000106F24 /* TreeTraverser.swift */,
-				DE047F271ECE12A700C13158 /* ViewController.swift */,
+				DEE0A02E1ED33E70002F7450 /* Info.plist */,
+				DEE0A0461ED33EE9002F7450 /* Node.swift */,
+				DEE0A0481ED33EF0002F7450 /* Queue.swift */,
+				DEE0A02D1ED33E70002F7450 /* TreeTraverser.h */,
+				DEE0A04A1ED33EFB002F7450 /* TreeTraverser.swift */,
 			);
-			path = TreeTraverserSwift;
+			path = TreeTraverser;
 			sourceTree = "<group>";
 		};
-		DE047F391ECE12A800C13158 /* TreeTraverserSwiftTests */ = {
+		DEE0A0371ED33E70002F7450 /* TreeTraverserTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE047F3C1ECE12A800C13158 /* Info.plist */,
-				DE765AF51ECFF181007F3550 /* NodeTests.swift */,
-				DE765AF91ED00B44007F3550 /* QueueTests.swift */,
-				DE047F3A1ECE12A800C13158 /* TreeTraverserTests.swift */,
+				DEE0A03A1ED33E71002F7450 /* Info.plist */,
+				DEE0A0421ED33ED0002F7450 /* NodeTests.swift */,
+				DEE0A0441ED33EDA002F7450 /* QueueTests.swift */,
+				DEE0A0381ED33E71002F7450 /* TreeTraverserTests.swift */,
 			);
-			path = TreeTraverserSwiftTests;
+			path = TreeTraverserTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		DE047F211ECE12A700C13158 /* TreeTraverserSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE047F3F1ECE12A800C13158 /* Build configuration list for PBXNativeTarget "TreeTraverserSwift" */;
-			buildPhases = (
-				DE047F1E1ECE12A700C13158 /* Sources */,
-				DE047F1F1ECE12A700C13158 /* Frameworks */,
-				DE047F201ECE12A700C13158 /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		DEE0A0281ED33E70002F7450 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE0A03B1ED33E71002F7450 /* TreeTraverser.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TreeTraverserSwift;
-			productName = TreeTraverserSwift;
-			productReference = DE047F221ECE12A700C13158 /* TreeTraverserSwift.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE047F351ECE12A800C13158 /* TreeTraverserSwiftTests */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DEE0A02A1ED33E70002F7450 /* TreeTraverser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE047F421ECE12A800C13158 /* Build configuration list for PBXNativeTarget "TreeTraverserSwiftTests" */;
+			buildConfigurationList = DEE0A0401ED33E71002F7450 /* Build configuration list for PBXNativeTarget "TreeTraverser" */;
 			buildPhases = (
-				DE047F321ECE12A800C13158 /* Sources */,
-				DE047F331ECE12A800C13158 /* Frameworks */,
-				DE047F341ECE12A800C13158 /* Resources */,
+				DEE0A0261ED33E70002F7450 /* Sources */,
+				DEE0A0271ED33E70002F7450 /* Frameworks */,
+				DEE0A0281ED33E70002F7450 /* Headers */,
+				DEE0A0291ED33E70002F7450 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE047F381ECE12A800C13158 /* PBXTargetDependency */,
 			);
-			name = TreeTraverserSwiftTests;
-			productName = TreeTraverserSwiftTests;
-			productReference = DE047F361ECE12A800C13158 /* TreeTraverserSwiftTests.xctest */;
+			name = TreeTraverser;
+			productName = TreeTraverser;
+			productReference = DEE0A02B1ED33E70002F7450 /* TreeTraverser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEE0A0321ED33E70002F7450 /* TreeTraverserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE0A0411ED33E71002F7450 /* Build configuration list for PBXNativeTarget "TreeTraverserTests" */;
+			buildPhases = (
+				DEE0A02F1ED33E70002F7450 /* Sources */,
+				DEE0A0301ED33E70002F7450 /* Frameworks */,
+				DEE0A0311ED33E70002F7450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE0A0361ED33E70002F7450 /* PBXTargetDependency */,
+			);
+			name = TreeTraverserTests;
+			productName = TreeTraverserTests;
+			productReference = DEE0A0331ED33E70002F7450 /* TreeTraverserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,16 +163,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Beepscore LLC";
 				TargetAttributes = {
-					DE047F211ECE12A700C13158 = {
+					DEE0A02A1ED33E70002F7450 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = J2LXK9FK3W;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					DE047F351ECE12A800C13158 = {
+					DEE0A0321ED33E70002F7450 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = J2LXK9FK3W;
 						ProvisioningStyle = Automatic;
-						TestTargetID = DE047F211ECE12A700C13158;
 					};
 				};
 			};
@@ -187,24 +189,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE047F211ECE12A700C13158 /* TreeTraverserSwift */,
-				DE047F351ECE12A800C13158 /* TreeTraverserSwiftTests */,
+				DEE0A02A1ED33E70002F7450 /* TreeTraverser */,
+				DEE0A0321ED33E70002F7450 /* TreeTraverserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE047F201ECE12A700C13158 /* Resources */ = {
+		DEE0A0291ED33E70002F7450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE047F301ECE12A700C13158 /* LaunchScreen.storyboard in Resources */,
-				DE047F2D1ECE12A700C13158 /* Assets.xcassets in Resources */,
-				DE047F2B1ECE12A700C13158 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE047F341ECE12A800C13158 /* Resources */ = {
+		DEE0A0311ED33E70002F7450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,56 +213,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE047F1E1ECE12A700C13158 /* Sources */ = {
+		DEE0A0261ED33E70002F7450 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE765AF81ED00121007F3550 /* Queue.swift in Sources */,
-				DE047F281ECE12A700C13158 /* ViewController.swift in Sources */,
-				DE047F261ECE12A700C13158 /* AppDelegate.swift in Sources */,
-				DE382E841ECE13D000106F24 /* TreeTraverser.swift in Sources */,
-				DE765AF41ECFEB6C007F3550 /* Node.swift in Sources */,
+				DEE0A0471ED33EE9002F7450 /* Node.swift in Sources */,
+				DEE0A0491ED33EF0002F7450 /* Queue.swift in Sources */,
+				DEE0A04B1ED33EFB002F7450 /* TreeTraverser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE047F321ECE12A800C13158 /* Sources */ = {
+		DEE0A02F1ED33E70002F7450 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE047F3B1ECE12A800C13158 /* TreeTraverserTests.swift in Sources */,
-				DE765AFA1ED00B44007F3550 /* QueueTests.swift in Sources */,
-				DE765AF61ECFF181007F3550 /* NodeTests.swift in Sources */,
+				DEE0A0391ED33E71002F7450 /* TreeTraverserTests.swift in Sources */,
+				DEE0A0451ED33EDA002F7450 /* QueueTests.swift in Sources */,
+				DEE0A0431ED33ED0002F7450 /* NodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE047F381ECE12A800C13158 /* PBXTargetDependency */ = {
+		DEE0A0361ED33E70002F7450 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE047F211ECE12A700C13158 /* TreeTraverserSwift */;
-			targetProxy = DE047F371ECE12A800C13158 /* PBXContainerItemProxy */;
+			target = DEE0A02A1ED33E70002F7450 /* TreeTraverser */;
+			targetProxy = DEE0A0351ED33E70002F7450 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DE047F291ECE12A700C13158 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE047F2A1ECE12A700C13158 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE047F2E1ECE12A700C13158 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE047F2F1ECE12A700C13158 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE047F3D1ECE12A800C13158 /* Debug */ = {
@@ -361,59 +339,76 @@
 			};
 			name = Release;
 		};
-		DE047F401ECE12A800C13158 /* Debug */ = {
+		DEE0A03C1ED33E71002F7450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J2LXK9FK3W;
-				INFOPLIST_FILE = TreeTraverserSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserSwift;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TreeTraverser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DE047F411ECE12A800C13158 /* Release */ = {
+		DEE0A03D1ED33E71002F7450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J2LXK9FK3W;
-				INFOPLIST_FILE = TreeTraverserSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserSwift;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TreeTraverser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		DE047F431ECE12A800C13158 /* Debug */ = {
+		DEE0A03E1ED33E71002F7450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = J2LXK9FK3W;
-				INFOPLIST_FILE = TreeTraverserSwiftTests/Info.plist;
+				INFOPLIST_FILE = TreeTraverserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeTraverserSwift.app/TreeTraverserSwift";
 			};
 			name = Debug;
 		};
-		DE047F441ECE12A800C13158 /* Release */ = {
+		DEE0A03F1ED33E71002F7450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = J2LXK9FK3W;
-				INFOPLIST_FILE = TreeTraverserSwiftTests/Info.plist;
+				INFOPLIST_FILE = TreeTraverserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beepscore.TreeTraverserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeTraverserSwift.app/TreeTraverserSwift";
 			};
 			name = Release;
 		};
@@ -429,23 +424,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE047F3F1ECE12A800C13158 /* Build configuration list for PBXNativeTarget "TreeTraverserSwift" */ = {
+		DEE0A0401ED33E71002F7450 /* Build configuration list for PBXNativeTarget "TreeTraverser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE047F401ECE12A800C13158 /* Debug */,
-				DE047F411ECE12A800C13158 /* Release */,
+				DEE0A03C1ED33E71002F7450 /* Debug */,
+				DEE0A03D1ED33E71002F7450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		DE047F421ECE12A800C13158 /* Build configuration list for PBXNativeTarget "TreeTraverserSwiftTests" */ = {
+		DEE0A0411ED33E71002F7450 /* Build configuration list for PBXNativeTarget "TreeTraverserTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE047F431ECE12A800C13158 /* Debug */,
-				DE047F441ECE12A800C13158 /* Release */,
+				DEE0A03E1ED33E71002F7450 /* Debug */,
+				DEE0A03F1ED33E71002F7450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

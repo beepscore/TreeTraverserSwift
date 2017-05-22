@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TreeTraverserSwift
+@testable import TreeTraverser
 
 class NodeTests: XCTestCase {
 
